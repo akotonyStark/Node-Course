@@ -11,11 +11,12 @@ const forecast = require('../utils/forecast')
 
 //console.log(path.join(__dirname, '../public'))
 const app = express()
-
-/*
-define paths for express config
-stores the root dir to allow visiting static html pages
-*/
+    //heroku will provide a port number, if not, 3000 is used
+const port = process.env.PORT || 3000
+    /*
+    define paths for express config
+    stores the root dir to allow visiting static html pages
+    */
 
 const publicDirPath = path.join(__dirname, '../public');
 //view path
@@ -151,6 +152,6 @@ app.get('*', (req, response) => {
 });
 
 //to start the server up
-app.listen(3000, () => {
-    console.log('server is up on port 3000')
+app.listen(port, () => {
+    console.log('server is up on port ', port)
 })
