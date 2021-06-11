@@ -1,3 +1,9 @@
-import superman from './11-classes'
+//import superman from './11-classes'
 
-superman.canSpeak()
+const { Superman, Human } = require('./11-classes')
+
+const clark = new Superman('Kent', 'male', 'superhuman')
+
+const augustine = new Human('Augustine', 'male')
+
+augustine.canSpeak()
