@@ -45,3 +45,6 @@ const clark = new Superman('Clark Kent', 'male', 'super strength')
 
 console.log('Hello i am ', clark.name, 'and i have ', clark.strength)
 clark.canSpeak()
+
+
+module.exports = { Superman, Human }
