@@ -29,3 +29,11 @@ const messages = [
 
 messages[1](messages[0]); // They can be inserted into arrays
 messages[3](messages[2]); // like variables
+
+
+const insideFn = error => {
+  error("They can be sent to other functions as arguments");
+};
+// They can be sent to other functions as arguments
+insideFn(message => console.log(message));
+
