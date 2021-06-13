@@ -51,3 +51,8 @@ scream("functions can be returned from other functions");
 scream("createScream returns a function");
 scream("scream invokes that returned function");
 
+//re-written as a higher order function
+const createScream = logger => message => {
+  logger(message.toUpperCase() + "!!!");
+};
+
