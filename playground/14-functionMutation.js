@@ -30,3 +30,20 @@ const rateCOlor = (color, rating) => {
   
 console.log(rateColor(lawn_color, 5).rating); //5
 console.log(lawn_color.rating); //0
+  
+  
+// As a pure function
+  const frederick = {
+  name: "Frederick Douglass",
+  canRead: false,
+  canWrite: false
+};
+
+const selfEducate = person => ({
+  ...person,
+  canRead: true,
+  canWrite: true
+});
+
+console.log(selfEducate(frederick));
+console.log(frederick);
