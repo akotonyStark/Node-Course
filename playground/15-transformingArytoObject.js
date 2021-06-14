@@ -9,6 +9,6 @@ const schoolArray = Object.keys(schools).map(key =>({
   wins:schools[key]
 }));
                                              
-               
+console.log(schoolArray)
                                              
                                              
