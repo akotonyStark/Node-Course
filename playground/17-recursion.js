@@ -5,6 +5,9 @@ const countdown = (value, fn) => {
 
 countdown(10, value => console.log(value));
 
+
+//countdown with a delay
+
 const countUp = (value, callback) => {
   callback(value);
   //return value < 20 ? countUp(value + 1, callback): value;
