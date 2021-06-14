@@ -5,11 +5,11 @@ const countdown = (value, fn) => {
 
 countdown(10, value => console.log(value));
 
-const countUp = (value, fn) => {
-  fn(value);
+const countUp = (value, callback) => {
+  callback(value);
   //return value < 20 ? countUp(value + 1, callback): value;
   if(value < 20){
-    countUp(value + 1, fn)
+    countUp(value + 1, callback)
   }else{
     return value
   }
