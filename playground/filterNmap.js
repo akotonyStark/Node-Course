@@ -12,4 +12,7 @@ const dummyOBJs = filtered.map(n => {
   return obj
 })
 
+//rewritten as
+const dummyOBJs = filtered.map(n =>  ({value : n}))
+
 console.log(dummyOBJs)
